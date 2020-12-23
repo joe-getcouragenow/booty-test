@@ -1,3 +1,4 @@
+# MUST have for Windows CI to work..
 .DEFAULT_GOAL       := all
 
 BOOTY_FSPATH=./../booty
