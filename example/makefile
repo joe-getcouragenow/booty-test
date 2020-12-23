@@ -1,4 +1,3 @@
-# boot repo makefiles
 BOOTY_FSPATH=./../../booty
 include $(BOOTY_FSPATH)/*.mk
 
