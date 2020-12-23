@@ -1,4 +1,4 @@
-module github.com/getcouragenow/booty-test/example/go/server
+module github.com/getcouragenow/booty-test/example/go
 
 go 1.15
 

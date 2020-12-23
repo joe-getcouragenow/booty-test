@@ -2,9 +2,13 @@
 .DEFAULT_GOAL       := all
 
 BOOTY_FSPATH=./../booty
-include $(BOOTY_FSPATH)/*.mk
+# OS.mk must be explicitly first...
+include $(BOOTY_FSPATH)/os.mk
+include $(BOOTY_FSPATH)/help.mk
+include $(BOOTY_FSPATH)/gitr.mk
+include $(BOOTY_FSPATH)/mkdep/*.mk
 
-all: print dep example-build
+all: print dep example-all
 
 print:
 	@echo -- OS --
@@ -12,10 +16,11 @@ print:
 	@echo
 
 dep:
-	@echo dep
-	# TODO: should call dep and do nothing because parent make already did all deps.
+	$(MAKE) dep-all-devtime
+	$(MAKE) dep-all-deploytime
 
-example-build:
+example-all:
 	cd ./example && $(MAKE) all
+
 
 

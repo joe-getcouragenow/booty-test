@@ -1,3 +1,3 @@
 # example
 
-Just a simple examples to test with.
+Just a few simple examples to test with.
