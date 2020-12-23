@@ -1,5 +1,3 @@
-.DEFAULT_GOAL       := help-print
-
 BOOTY_FSPATH=./../booty
 include $(BOOTY_FSPATH)/*.mk
 
