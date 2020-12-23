@@ -1,3 +1,5 @@
+.DEFAULT_GOAL       := all
+
 BOOTY_FSPATH=./../booty
 include $(BOOTY_FSPATH)/*.mk
 
